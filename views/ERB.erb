@@ -1,0 +1,19 @@
+<body style="background-color: goldenrod">
+<h1><%= @title_ipsum.sample %></h1>
+<% @romansum = [] %>
+ <% @times.times do %>
+     <% @romansum.push @roman_ipsum.sample %>
+   <% end %>
+  <% @romansum = @romansum.join(' ') %>
+   <% @greeksum = [] %>
+   <% @times.times do %>
+    <% @greeksum.push @greek_ipsum.sample %>
+<% end %>
+<% @greeksum = @greeksum.join(' ') %>
+<div style="color: purple">
+  <%= @romansum %>
+</div>
+<div style="color: green">
+  <%= @greeksum %>
+</div>
+</body>
