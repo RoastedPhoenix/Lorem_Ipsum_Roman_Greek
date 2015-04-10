@@ -1,0 +1,20 @@
+<head>
+  <title>Roman/Greek Mythology Ipsum Generator</title>
+</head>
+<body>
+<form method="post" action="/Ipsum/Generate">
+  <label for="amount">Amount of ipsum</label>
+  <input type="number" name="quantity" id="amount" required>
+  <br>
+  <label for="pages">Pages</label>
+  <input type="radio" name="amount" value="pages" id="pages">
+  <br>
+  <label for="paragraphs">Paragraphs</label>
+  <input type="radio" name="amount" value="paragraphs" id="paragraphs">
+  <br>
+  <label for="words">Words</label>
+  <input type="radio" name="amount" value="words" id="words" checked>
+  <br>
+  <input type="submit" value="Generate">
+</form>
+</body>
